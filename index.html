@@ -1,0 +1,543 @@
+<!DOCTYPE>
+<html>
+<head>
+    <link rel="stylesheet"  href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="mov">   
+        <ul><img src="softlogo.png" height="8%"></ul>
+    </div>
+    
+    <div class="manu">
+        
+        <div class="b">
+                 
+         </div>
+        <nav>
+        <ul class="topnav" id="ddc">
+        <table style="color: teal">
+            <li><a class="buton" style="vertical-align:middle"  href="index.html" ><span  >Home</span></a></li>
+              <li class="dropdown">
+               
+                    <a class="buton" style="vertical-align:middle" ><span >Services</span></a>
+                   
+                    <div class="dropdown-content" >
+                      <a href="tranning.html">Tranning </a>
+                      <a href="officem.html">Office Management</a>
+                      <a href="hotelm.html">Hotel Management</a>
+                      <a href="hospitalm.html">Hospital Management</a>
+                      <a href="educationm.html">Education Management</a>
+                      
+                    </div>
+                
+              </li>
+            
+   
+           
+             <li class="dropdown">
+               
+                    <a class="buton" style="vertical-align:middle" ><span >Projects</span></a>
+                   
+                    <div class="dropdown-content" >
+                      <a href="softwareb.html">Software Based</a>
+                      <a href="hardwareb.html">Hardware Based</a>
+                      <a href="iotb.html">IoT Based</a>
+                    </div>
+                
+              </li>
+             <li><a class="buton" style="vertical-align:middle"  href="products.html"><span>Products</span></a></li>
+            <li><a class="buton" style="vertical-align:middle"  href="timeline.html"><span> News Timeline</span></a></li>
+            <li><a class="buton" style="vertical-align:middle"  href="contactus.html" ><span  >Contact Us </span></a></li>  
+            <li><a class="buton" style="vertical-align:middle"  href="about.html" ><span  >About</span></a></li>
+            
+            
+            
+            
+            <li class="topnav-right"><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="Lbuton">Login</button></li>   
+            <li class="topnav-right"><button onclick="document.getElementById('id02').style.display='block'" style="width:auto;" class="Lbuton">Sign Up</button></li>
+            
+            <form>
+                <li class="topnav-right"><input class="search" type="text" name="search" placeholder="Search.."></li>
+            </form>  
+            
+            <li class="ddi"><a href="javascript:void(0);" onClick="ddm()">&#9776</a></li>
+        </table>
+        </ul>    
+        </nav>
+       
+    </div>
+        
+        
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="pic.gif" style="width:100%" height="(width/3)%" >
+  <div class="text">BlindMarshall Logo</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="giflogo2.gif" style="width:100%" height="(width/3)%">
+  <div class="text">Raspberry Pi</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="giflogo.gif" style="width:100%" height="(width/3)%">
+  <div class="text">Data Base</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+        
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<div class="btop">       
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
+</div>
+
+        
+
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+      <img src="softlogo.png" alt="BlindMarshall" class="avatar">
+    </div>
+
+    <div class="container">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" id="psw" name="psw" required>
+        <input type="checkbox" onclick="myFunction()">Show Password<br><br>
+        
+      <button class="Lbuton" type="submit">Login</button>
+      <input type="checkbox" checked="checked"> Remember me
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+       
+<div id="id02" class="modal">
+ 
+  <form class="modal-content animate" action="/action_page.php">
+      <div class="imgcontainer">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">×</span>
+      <img src="softlogo.png" alt="BlindMarshall" class="avatar">
+    </div>
+      
+    <div class="container">
+      
+        
+        <label><b>Name</b></label>
+      <input type="text" placeholder="Name" name="name"   required>
+        
+      <label><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+        
+        <label><b>Mobile </b></label>
+      <input type="text" placeholder="Mobile Number ex: +8801521316362 " name="mobile" required>
+
+      <label for="psw2">Password</label>
+    <input type="password"  placeholder="Password" id="psw2" name="psw2" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+    <input type="checkbox" onclick="myFunction()">Show Password
+        <br><br>
+
+      <label><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      <input type="checkbox" checked="checked"> Remember me
+      <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="Lbuton">Sign Up</button>
+      </div>
+        
+    </div>
+      
+      <div id="message">
+  <h3>Password must contain the following:</h3>
+	<p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+	<p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+	<p id="number" class="invalid">A <b>number</b></p>
+	<p id="length" class="invalid">Minimum <b>8 characters</b></p>
+</div>
+  </form>
+</div>
+    
+    
+        
+        
+    <div style="text-align:center">
+        <h1  >Services:</h1>
+        <p style="color: whitesmoke">
+        We are here to help the people in various wayin ther everyday life .<br>Unlimited talk, text & data. <br>Our phones come with a 30-day money-back guarantee and<br> 1 year warranty. If you aren't satisfied just send your phone bac <br>Dont worry to tell us your 
+        </p>
+        </div>    
+        
+        
+        <div style="text-align:center" >
+        <h1  ><a name="about">About Us :</a></h1>
+        <p style="color: whitesmoke">
+        We are here to help the people in various wayin ther everyday life .<br>Textfree is the free calling and free SMS app that gives you a real US phone number <br>so you can send text anyone,<br> even if they don't have the app. Keep in touch <br>Dont worry to tell us your 
+        </p>
+        </div> 
+        
+        
+        
+        
+
+        
+        
+
+<div class="cont">
+        <div class="row">
+            <div class="col-3">
+                <div class="box">
+                        <div class="container">
+                            <h2 style="color: aquamarine; text-align: center">Contact Us</h2>
+                                  <form action="/action_page.php">
+                                    <div class="row">
+                                      <div class="col-25">
+                                        <label for="fname">Name</label>
+                                      </div>
+                                      <div class="col-75">
+                                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-25">
+                                        <label for="email" >Email</label>
+                                      </div>
+                                      <div class="col-75">
+                                        <input type="text" id="email" name="email" placeholder="Your email..">
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-25">
+                                        <label for="country">Country</label>
+                                      </div>
+                                      <div class="col-75">
+                                        <select id="country" name="country">
+                                          <option value="bangladesh">Bangladesh</option>      
+                                          <option value="australia">Australia</option>  
+                                          <option value="canada">Canada</option>
+                                          <option value="usa">USA</option>
+                                        </select>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-25">
+                                        <label for="subject">Subject</label>
+                                      </div>
+                                      <div class="col-75">
+                                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px " ></textarea>
+                                      </div>
+                                    </div>
+                                    <div style="align-items: center">
+                                      <input type="submit" value="Submit">
+                                    </div>
+                             </form>
+                         </div> 
+                  
+                </div>
+            </div>
+            <div class="col-3">
+                  <div class="box">
+                         <div class="container">
+                             <h2 style="text-align: center;">Address </h2>
+                             <br><br><br>
+                             <h3 style="text-align: center;font-size: 50px;color: azure">
+                             Comilla Cantonment<br>Comilla , Bangladesh
+                             </h3>
+                        </div>
+                  </div> 
+            </div>
+            <div class="col-3">
+                 <div class="box">
+                         
+                            <form action="/action_page.php">
+                                <div class="container">
+                                <h2 style="text-align: center">Subscribe Newsletter</h2>
+                                    <h4 style="text-align: center">To get our our everyday update</h4>
+                                    <br><br>
+                                <input type="text" placeholder="Name" name="name" required>
+                                    <br><br>
+                                <input style="color: aqua" type="text" placeholder="Email address" name="mail" required>
+                                    <br><br><br>
+                                <input type="submit" value="Subscribe">
+    
+                                    </div>
+                            
+                             </form>
+                         
+                  </div> 
+            </div>
+        </div>
+    </div>
+
+ 
+
+
+<div designer>
+    <h1  style="float: right;text-align: center;" >Web Designer <button class="buttton" id="mybtn">M Shakhawat Hossain</button> </h1>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+      
+    <h2 style="text-align:center;color: black">Web Designer</h2>
+
+    <div class="card">
+      <img src="mypic.jpg" alt="Shakhawat" style="width:100%">
+        <h1 style="color: snow;"><b>M Shakhawat Hossain</b></h1>
+      <p class="title">CEO & Founder, BlindMarshall</p>
+      <p>BAIUST</p>
+      <div style="margin: 24px 0;">
+        <a href="#"><i class="fa fa-dribbble"></i></a> 
+        <a href="#"><i class="fa fa-twitter"></i></a>  
+        <a href="#"><i class="fa fa-linkedin"></i></a>  
+        <a href="https://www.facebook.com/gm.baiust"><i class="fa fa-facebook"></i></a> 
+          <br><br>
+     </div>
+    </div>
+      
+      
+      
+  </div>
+    </div>     
+
+ </div>      
+   
+        
+        
+        
+        
+        
+        
+        
+        
+        
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+       
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+    
+    ///Login
+    
+    // Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+//Sign Up
+
+var myInput = document.getElementById("psw2");
+var letter = document.getElementById("letter");
+var capital = document.getElementById("capital");
+var number = document.getElementById("number");
+var length = document.getElementById("length");
+
+
+var modal2 = document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+     if (event.target == modal2) {
+       modal2.style.display = "none";
+   myInput.onfocus = function() {
+    document.getElementById("message").style.display = "block";
+}
+
+// When the user clicks outside of the password field, hide the message box
+myInput.onblur = function() {
+    document.getElementById("message").style.display = "none";
+}
+
+// When the user starts to type something inside the password field
+myInput.onkeyup = function() {
+  // Validate lowercase letters
+  var lowerCaseLetters = /[a-z]/g;
+  if(myInput.value.match(lowerCaseLetters)) {  
+    letter.classList.remove("invalid");
+    letter.classList.add("valid");
+  } else {
+    letter.classList.remove("valid");
+    letter.classList.add("invalid");
+  }
+  
+  // Validate capital letters
+  var upperCaseLetters = /[A-Z]/g;
+  if(myInput.value.match(upperCaseLetters)) {  
+    capital.classList.remove("invalid");
+    capital.classList.add("valid");
+  } else {
+    capital.classList.remove("valid");
+    capital.classList.add("invalid");
+  }
+
+  // Validate numbers
+  var numbers = /[0-9]/g;
+  if(myInput.value.match(numbers)) {  
+    number.classList.remove("invalid");
+    number.classList.add("valid");
+  } else {
+    number.classList.remove("valid");
+    number.classList.add("invalid");
+  }
+  
+  // Validate length
+  if(myInput.value.length >= 8) {
+    length.classList.remove("invalid");
+    length.classList.add("valid");
+  } else {
+    length.classList.remove("valid");
+    length.classList.add("invalid");
+  }
+}
+
+  }
+    
+}
+
+function myFunction() {
+    
+    var x = document.getElementById("psw");
+    if (x.type === "password") {
+        x.type = "text";
+    } else {
+        x.type = "password";
+    }
+            
+        
+    
+}
+    
+    function myFunction() {
+    
+    var x = document.getElementById("psw2");
+    if (x.type === "password") {
+        x.type = "text";
+    } else {
+        x.type = "password";
+    }
+            
+        
+    
+}
+    
+    
+
+ 
+    
+    
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("mybtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+//home
+function ddm()
+        {
+            var x=document.getElementById("ddc");
+            if(x.className==="topnav"){
+                x.className+= " responsive";
+            }
+            else{
+                x.className = "topnav";
+            }
+        }
+
+
+</script>
+        
+  
+</body>    
+    
+</html>
